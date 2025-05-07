@@ -35,7 +35,7 @@ const ProductItems = () => {
     }
 
     const getItems = async () => {
-        const response = await fetchData(`/api/item/${id}`);
+        const response = await fetchData(`/api/item/product/${id}`);
         if(response.success) {
             setSavedItems(response.items)
         }
